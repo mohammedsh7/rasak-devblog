@@ -1,0 +1,197 @@
+@import './variables.scss';
+
+section#blog {
+    padding: 1rem 0 0;
+    hr.line {
+        margin-bottom: 20px;
+    }
+    h1.title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: .7rem;
+        line-height: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    strong {
+        display: block;
+        font-weight: bold;
+        font-size: 1.7em;
+        margin-bottom: 1rem;
+    }
+
+    ul, ol {
+        list-style: disc;
+        li {
+            margin-left: 2rem;
+            margin-bottom: .5rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    ol {
+        list-style: decimal;
+    }
+
+    div.info {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        div {
+            margin-right: 1.3rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: .7rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                display: block;
+                width: 1.3rem;
+                margin-bottom: 0;
+                margin-right: 0.3rem;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 30rem;
+        height: auto;
+        border-radius: .3rem;
+        margin-bottom: .7rem;
+        @media all and (max-width: 640px){
+            width: 100%;
+        }
+    }
+}
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    box-shadow: $box_shadow;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 15px;
+    width: auto;
+    border-radius: 3px;
+    h3.title {
+        margin-bottom: .9rem;
+    }
+    span.toc_count {
+        margin-right: 0.3rem;
+        color: #059669;
+    }
+    a {
+        text-decoration: underline;
+        color: #059669;
+    }
+    ul.toc_list {
+        list-style: none;
+        li {
+            font-size: 18px;
+            &.mian_title {
+                a, span {
+                    font-weight: 500;
+                }
+            }
+            &.sub_title {
+                font-size: 16px;
+                a, span {
+                    font-weight: 400;
+                    color: #059669;
+                }
+            }
+            margin-bottom: 0.7rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            ul.toc_sub_list {
+                list-style: none;
+                li {
+                    margin-left: 1rem;
+                    &:first-child {
+                        margin-top: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#switch_post {
+    margin: 2rem 0;
+    hr.line {
+        margin-bottom: 20px;
+    }
+    a {
+        background: rgba(38,38,38,1);
+        box-shadow: $box_shadow;
+        // color: rgb(255, 255, 255);
+        color: #000;
+        background-color: #ffffff9f;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.2rem;
+        padding: .6rem 1.8rem;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+section#tags {
+    margin: 2rem 0;
+    h3.head_title {
+        text-decoration: underline 4px rgb(82, 82, 82);
+        text-underline-offset: 6px;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    ul.tags {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        li.tag {
+            a {
+                display: block;
+                font-size: 1rem;
+                transition-duration: .2s;
+                padding: .11rem 1rem;
+                font-weight: normal;
+                border-radius: .2rem;
+                box-shadow: $box_shadow;
+                color: #000;
+                background-color: #ffffff9f;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and(max-width: 768px) {
+    section#article {
+        div.info {
+            flex-wrap: wrap;
+        }
+    }
+}

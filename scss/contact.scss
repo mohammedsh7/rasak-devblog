@@ -1,0 +1,92 @@
+@import './variables.scss';
+
+section#contact {
+    padding: 2rem 0;
+    h3.head_title {
+        text-decoration: underline 4px rgb(82, 82, 82);
+        text-underline-offset: 6px;
+        margin-bottom: 1.7rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    form {
+        width: 25rem;
+        div.input_group {
+            input {
+                width: 100%;
+                display: block;
+                border-radius: .4rem;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(.4,0,.2,1);
+                transition-duration: .15s;
+                line-height: inherit;
+                font-size: 1.2rem;
+                border: 3px solid transparent;
+                &:focus {
+                    border-color: teal;
+                }
+                &[type=email] {
+                    // background-color: rgba(38,38,38,1);
+                    // color: rgba(250,250,250,1);
+                    color: #222;
+                    background-color: #ddddddf5;
+                    box-shadow: $box_shadow;
+                    padding: .7rem .7rem;
+                    margin-bottom: 1rem;
+                }
+                &[type=text] {
+                    // background-color: rgba(38,38,38,1);
+                    // color: rgba(250,250,250,1);
+                    color: #222;
+                    background-color: #ddddddf5;
+                    box-shadow: $box_shadow;
+                    padding: .7rem .7rem;
+                    margin-bottom: 1rem;
+                }
+                &[type=submit] {
+                    display: inline-block;
+                    width: auto;
+                    background-color: rgba(251,146,60,1);
+                    color: rgba(23,23,23,1);
+                    font-weight: 700;
+                    cursor: pointer;
+                    padding: .6rem 1.3rem;
+                    &:hover {
+                        background-color: rgba(251,207,232,1);
+                    }
+                }
+            }
+            textarea {
+                width: 100%;
+                border-radius: .3rem;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(.4,0,.2,1);
+                transition-duration: .15s;
+                line-height: inherit;
+                font-size: 1.2rem;
+                border: 3px solid transparent;
+                // background-color: rgba(38,38,38,1);
+                // color: rgba(250,250,250,1);
+                color: #222;
+                background-color: #ddddddf5;
+                box-shadow: $box_shadow;
+                padding: .7rem;
+                margin-bottom: 1rem;
+                resize: vertical;
+                &:focus {
+                    border-color: teal;
+                }
+            }
+        }
+    }
+}
+
+@media all and(max-width: 480px) {
+    main {
+        section#contact {
+            form {
+                width: 100%;
+            }
+        }
+    }
+}

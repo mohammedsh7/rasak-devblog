@@ -1,0 +1,146 @@
+@import './variables.scss';
+
+#about {
+    padding: 50px 0;
+    .flex_wrapper {
+        align-items: flex-start;
+        gap: 32px;
+    }
+    div.left {
+        width: 50%;
+        div.top {
+            div.img_container {
+                margin-bottom: 10px;
+                img {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 3px solid rgba(0, 0, 0, 0.5);
+                    @media all and(max-width: 879px){
+                        width: 70px;
+                        height:70px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            div.name {
+                margin-bottom: 15px;
+                h1.name {
+                    font-size: 24px;
+                    line-height: 1.25;
+                    font-weight: 600;
+                }
+                h5.username {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 24px;
+                }
+                @media all and(max-width: 879px){
+                    h5.username {
+                        font-size: 18px;
+                    }
+                }
+            }
+            @media all and(max-width: 879px){
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        div.bio_text {
+            margin-bottom: 15px;
+            p {
+                font-size: 1rem;
+                max-width: 80%;
+                line-height: 1.7em;
+                color: rgba(0, 0, 0, 0.699);
+                @media all and(max-width: 480px){
+                    max-width: 100%;
+                }
+            }
+        }
+        ul.social {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 15px;
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                img {
+                    display: block;
+                    width: 18px;
+                    margin-right: .4em;
+                }
+                a {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.699);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        @media all and(max-width: 879px){
+            width: 100%;
+        }
+    }
+
+    div.right {
+        flex-grow: 1;
+        max-width: 600px;
+        // padding-left: 32px;
+        div.top {
+            h3 {
+                text-decoration: underline 4px rgb(82, 82, 82);
+                text-underline-offset: 6px;
+                margin-bottom: 1.7rem;
+                font-size: 1.7rem;
+                font-weight: 700;
+            }
+        }
+        ul.projects {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            li.project {
+                border: 1px solid;
+                border-color: teal;
+                border-radius: .5rem;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+                transition-duration: .15s;
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h3.title {
+                    margin-bottom: 10px;
+                }
+                p.bio {
+                    margin-bottom: 10px;
+                }
+                ul.links {
+                    display: flex;
+                    align-items: center;
+                    li {
+                        margin-right: 15px;
+                        a {
+                            color: crimson;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+section#blogs {
+  padding: 50px 0;
+}
+
+section#blogs div.top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section#blogs div.top h1.title {
+  font-size: 40px;
+}
+
+section#blogs hr {
+  margin-bottom: 20px;
+}
+
+section#blogs ul.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.3rem;
+}
+
+section#blogs ul.articles li.article {
+  width: 45%;
+  border-radius: .25em;
+  padding: 1rem;
+  background-color: #ffffff9f;
+  -webkit-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+section#blogs ul.articles li.article a {
+  display: block;
+}
+
+section#blogs ul.articles li.article a h3 {
+  color: #222222;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#blogs ul.articles li.article a h3 span.icon {
+  margin-right: 0.4rem;
+}
+
+section#blogs ul.articles li.article a p {
+  max-width: 90%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-bottom: 1rem;
+}
+
+section#blogs ul.articles li.article ul.tags {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+section#blogs ul.articles li.article ul.tags li.tag {
+  margin-right: 1rem;
+}
+
+section#blogs ul.articles li.article ul.tags li.tag a {
+  display: block;
+  font-size: .8rem;
+  background: #454e56;
+  color: #b2becd;
+  padding: 0.2rem .5rem;
+  font-weight: 500;
+  border-radius: 0.1rem;
+}
+
+@media (max-width: 980px) {
+  section#blogs ul.articles li.article {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  section#blogs ul.articles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=blogs.css.map */

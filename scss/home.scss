@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+section#home {
+    padding: 50px 0;
+    div.top {
+        text-align: center;
+        margin-bottom: 20px;
+        h1.title {
+            font-size: 40px;
+        }
+    }
+    hr {
+        margin-bottom: 20px;
+    }
+    ul.articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        li.article {
+            width: 45%;
+            border-radius: .25em;
+            padding: 1rem;
+            background-color: #ffffff9f;
+            transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+            // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            box-shadow: $box_shadow;
+            a {
+                display: block;
+                h3 {
+                    color: rgb(34, 34, 34);
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    span.icon {
+                        margin-right: 0.4rem;
+                    }
+                }
+                p {
+                    max-width: 90%;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 1.6em;
+                    margin-bottom: 1rem;
+                }
+
+            }
+            ul.tags {
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                li.tag {
+                    margin-right: 1rem;
+                    a {
+                       display: block;
+                       font-size: .8rem;
+                       background: #454e56;
+                       color: #b2becd;
+                       padding: 0.2rem .5rem;
+                       font-weight: 500;
+                       border-radius: 0.1rem;
+                    }
+                }
+            }
+            @media (max-width: 980px) {
+                width: 100%;
+            }
+        }
+        @media (max-width: 980px) {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+section#contact {
+  padding: 2rem 0;
+}
+
+section#contact h3.head_title {
+  -webkit-text-decoration: underline 4px #525252;
+          text-decoration: underline 4px #525252;
+  text-underline-offset: 6px;
+  margin-bottom: 1.7rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+section#contact form {
+  width: 25rem;
+}
+
+section#contact form div.input_group input {
+  width: 100%;
+  display: block;
+  border-radius: .4rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+  line-height: inherit;
+  font-size: 1.2rem;
+  border: 3px solid transparent;
+}
+
+section#contact form div.input_group input:focus {
+  border-color: teal;
+}
+
+section#contact form div.input_group input[type=email] {
+  color: #222;
+  background-color: #ddddddf5;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: .7rem .7rem;
+  margin-bottom: 1rem;
+}
+
+section#contact form div.input_group input[type=text] {
+  color: #222;
+  background-color: #ddddddf5;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: .7rem .7rem;
+  margin-bottom: 1rem;
+}
+
+section#contact form div.input_group input[type=submit] {
+  display: inline-block;
+  width: auto;
+  background-color: #fb923c;
+  color: #171717;
+  font-weight: 700;
+  cursor: pointer;
+  padding: .6rem 1.3rem;
+}
+
+section#contact form div.input_group input[type=submit]:hover {
+  background-color: #fbcfe8;
+}
+
+section#contact form div.input_group textarea {
+  width: 100%;
+  border-radius: .3rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+  line-height: inherit;
+  font-size: 1.2rem;
+  border: 3px solid transparent;
+  color: #222;
+  background-color: #ddddddf5;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: .7rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+section#contact form div.input_group textarea:focus {
+  border-color: teal;
+}
+
+@media all and (max-width: 480px) {
+  main section#contact form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,216 @@
+#about {
+  padding: 50px 0;
+}
+
+#about .flex_wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 32px;
+}
+
+#about div.left {
+  width: 50%;
+}
+
+#about div.left div.top div.img_container {
+  margin-bottom: 10px;
+}
+
+#about div.left div.top div.img_container img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-width: 879px) {
+  #about div.left div.top div.img_container img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+}
+
+#about div.left div.top div.name {
+  margin-bottom: 15px;
+}
+
+#about div.left div.top div.name h1.name {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+#about div.left div.top div.name h5.username {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media all and (max-width: 879px) {
+  #about div.left div.top div.name h5.username {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 879px) {
+  #about div.left div.top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#about div.left div.bio_text {
+  margin-bottom: 15px;
+}
+
+#about div.left div.bio_text p {
+  font-size: 1rem;
+  max-width: 80%;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+@media all and (max-width: 480px) {
+  #about div.left div.bio_text p {
+    max-width: 100%;
+  }
+}
+
+#about div.left ul.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+}
+
+#about div.left ul.social li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+#about div.left ul.social li:last-child {
+  margin-bottom: 0;
+}
+
+#about div.left ul.social li img {
+  display: block;
+  width: 18px;
+  margin-right: .4em;
+}
+
+#about div.left ul.social li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+#about div.left ul.social li a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 879px) {
+  #about div.left {
+    width: 100%;
+  }
+}
+
+#about div.right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 600px;
+}
+
+#about div.right div.top h3 {
+  -webkit-text-decoration: underline 4px #525252;
+          text-decoration: underline 4px #525252;
+  text-underline-offset: 6px;
+  margin-bottom: 1.7rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+#about div.right ul.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+#about div.right ul.projects li.project {
+  border: 1px solid;
+  border-color: teal;
+  border-radius: .5rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about div.right ul.projects li.project h3.title {
+  margin-bottom: 10px;
+}
+
+#about div.right ul.projects li.project p.bio {
+  margin-bottom: 10px;
+}
+
+#about div.right ul.projects li.project ul.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about div.right ul.projects li.project ul.links li {
+  margin-right: 15px;
+}
+
+#about div.right ul.projects li.project ul.links li a {
+  color: crimson;
+  font-weight: 400;
+}
+/*# sourceMappingURL=about.css.map */
